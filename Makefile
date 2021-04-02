@@ -1,16 +1,8 @@
 CC = gcc
-CFLAG = -g -lm
- 
-all: oss user
-
-%.o: %.c
-	$(CC) $(CFLAG) -c $< -o $@
+CFLAG = -g
 
 oss: oss.o
-	$(CC) $(CFLAG) $< -o $@ -lm
-
-user: user.o
-	$(CC) $(CFLAG) $< -o $@ -lm
+	$(CC) $(CFLAG) $< -o $@
 
 clean:
-	rm -f *.o oss user *log
+	rm -f *.o oss
