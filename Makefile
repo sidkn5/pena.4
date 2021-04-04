@@ -13,4 +13,4 @@ user: user.o
 	$(CC) $(CFLAG) $< -o $@ -lm
 
 clean:
-	rm -f *.o oss user *log *.txt
+	rm -f *.o oss user *.txt

@@ -51,7 +51,6 @@ void handler(){
 
 //semaphore signal function, increment sem
 void sem_signal() {
-	printf("USER: Signaling that done\n");
 	struct sembuf sem;
 	sem.sem_op = 1;
 	sem.sem_num = 0;
@@ -100,9 +99,6 @@ int main(int argc, char* argv[]) {
 	signal(SIGTERM, handler);
 	signal(SIGSEGV, handler);
 	
-	
-	//sprintf(logfile, "%d.log", randomNum);
-	//fp = fopen(logfile, "a");
 
 
 	//attach to shared memory
@@ -144,8 +140,7 @@ int main(int argc, char* argv[]) {
 			if (num % 2 == 0) {
 				times = rand() % 11;
 				burstTime = rand() % ((10000000 + 1) - 1) + 1;
-				//printf("PID: %d is terminating early after working for %d ms\n", user_pid, time);
-				//fprintf(file_ptr, "Process is terminating early\n");
+				
 				shmPtr->pcb[userInd].terminated = true;
 				shmPtr->pcb[userInd].lastExecTime = burstTime;
 				shmPtr->pcb[userInd].cpuTimeMs += times;
@@ -172,9 +167,8 @@ int main(int argc, char* argv[]) {
 		//check if there is an interrupt
 		if (shmPtr->pcb[userInd].type == 1) {
 			//can be interrupted
-			num = rand() % 13;
-			if (num % 4 == 0) {
-				//fprintf(file_ptr, "Process is being blocked\n");
+			num = rand() % 20;
+			if (num % 5 == 0) {
 				shmPtr->pcb[userInd].blocked = true;
 				shmPtr->pcb[userInd].blockedSeconds = shmPtr->seconds + (rand() % ((5 + 1) - 1) + 1);
 				shmPtr->pcb[userInd].blockedNanoseconds = shmPtr->nanoseconds + (rand() % 1000 + 1 -1 + 1);
@@ -185,7 +179,6 @@ int main(int argc, char* argv[]) {
 
 			}
 			else {
-				//fprintf(file_ptr, "Process is not being blocked\n");
 				done = true;
 			}
 		}

@@ -41,6 +41,17 @@ int blockedIn = 0;
 int blockedOut = 0;
 char addToLogBuffer[300];		//a buffer to log messages
 int lineLimit;					//line limit of log file
+float allUsers = 0;
+float blockedStatistic;
+float gotBlocked = 0;
+double averageWaitTime = 0;
+unsigned int totalCpuTimeUsed = 0;
+unsigned int totalSystemTime = 0;
+unsigned int accumulator = 0;
+int reportUsers = 0;
+double cpuUtilization = 0;
+double cpuUtilAccumulator = 0;
+
 FILE* fp;	
 holder* shmPtr;
 pid_t* pids;
@@ -88,8 +99,21 @@ void killChildPids() {
 	}
 }
 
+//report statistics
+void report() {
+	blockedStatistic = gotBlocked / allUsers;
+	accumulator = abs((totalSystemTime - totalCpuTimeUsed)) / reportUsers;
+	printf("Termination Report: \n");
+	printf("User processes blocked percentage: %.1f \n", blockedStatistic);
+	printf("Average wait time: %d ns\n", (accumulator * 1000000));
+	printf("Average time in the system %d ms\n", (totalSystemTime / reportUsers));
+	printf("Average CPU utilization: %.1f \n", (cpuUtilAccumulator / reportUsers));
+
+}
+
 //deallocates and frees everything
 void cleanAll() {
+	report();
 	killChildPids();
 	shmdt(shmPtr);
 	shmctl(shmid, IPC_RMID, NULL);
@@ -154,19 +178,18 @@ void forkCheck() {
 
 //
 void nextFork() {
-	//unsigned int nanoSec = shmPtr->forkNanoSec;
+	unsigned int nanoSec = shmPtr->forkNanoSec;
 	
 	shmPtr->forkSec = (rand() % 2) + shmPtr->seconds;
 	shmPtr->forkNanoSec = (rand() % 1001) + shmPtr->nanoseconds;
 
-	forkCheck();
-	/*if (nanoSec >= 1000000000) {
+	if (nanoSec >= 1000000000) {
 		shmPtr->forkSec += 1;
 		shmPtr->forkNanoSec -= 1000000000;
-	}*/
+	}
 }
 
-//counts all the user processes
+//counts all the user processes that are ready
 int countUsersReady() {
 	int count = 0;
 	int i;
@@ -228,11 +251,10 @@ int freeIndex() {
 //forking of the user process
 void forkChild(int index) {
 
-	printf("forking\n");
 	int pid;
 
 	if ((pid = fork()) == -1) {
-		perror("oss.c: Failed forking child...");
+		perror("oss.c: Failed to fork child...");
 		cleanAll();
 		exit(1);
 	}
@@ -246,7 +268,6 @@ void forkChild(int index) {
 			sprintf(addToLogBuffer, "OSS: PID: %d is in the ready queue\n", shmPtr->pcb[index].currentPid);
 			logging(addToLogBuffer);
 			readyIn = (readyIn + 1) % MAX;
-			//printf("ready in incremented\n");
 		}
 		else {
 			execl("./user", "./user", (char*)0);
@@ -257,7 +278,6 @@ void forkChild(int index) {
 //dispatch the next process
 void releaseNextProcesses() {
 	int index = freeIndex();
-	//printf("forking child in index: %d\n", index);
 	forkChild(index);
 }
 
@@ -368,6 +388,7 @@ int main(int argc, char* argv[]) {
 		case 'l':
 			z = strlen(optarg);
 			if (z < 30) {
+				
 				strcpy(logfile, optarg);
 				printf("logfile name: %s\n", logfile);
 
@@ -389,9 +410,10 @@ int main(int argc, char* argv[]) {
 	//printf("HelloWorldNew \n");
 
 	//defaults to logfile.txt
-	if (newLogfile != 1) {
+	if (newLogfile == 1) {
 		strcpy(logfile, "logfile.txt");
 	}
+
 
 	fp = fopen(logfile, "a");
 
@@ -454,7 +476,7 @@ int main(int argc, char* argv[]) {
 
 	nextFork();
 
-	//
+	//while loop
 	while (1) {
 		sleep(1);
 		usersReady = countUsersReady();
@@ -463,22 +485,18 @@ int main(int argc, char* argv[]) {
 		//printf("User Count: %d \n", userCount);
 
 		if(shmPtr->noOfUsers < MAX){
-			//printf("got here\n");
-			//printf("sec %d minus seconds %d", shmPtr->forkSec, shmPtr->seconds);
 			//fork a user if allowed, base on the time clock
 			if (shmPtr->forkSec == shmPtr->seconds) {
-				printf("got here1\n");
-				printf("nanosec %d minus nanoseconds %d\n", shmPtr->forkNanoSec, shmPtr->nanoseconds);
-				printf("sec2 %d minus seconds2 %d\n", shmPtr->forkSec, shmPtr->seconds);
-				if (shmPtr->forkNanoSec <= shmPtr->nanoseconds) {
-					printf("got here2\n");
+
+				//printf("nanosec %d minus nanoseconds %d\n", shmPtr->forkNanoSec, shmPtr->nanoseconds);
+				//printf("sec2 %d minus seconds2 %d\n", shmPtr->forkSec, shmPtr->seconds);
+				if (shmPtr->forkNanoSec <= shmPtr->nanoseconds) {		
 					releaseNextProcesses();
 					nextFork();
 				}
 				
 			}
-			else if (shmPtr->forkSec < shmPtr->seconds) {
-				printf("got here3\n");
+			else if (shmPtr->forkSec < shmPtr->seconds) {			
 				releaseNextProcesses();
 				nextFork();
 			}
@@ -494,7 +512,6 @@ int main(int argc, char* argv[]) {
 
 		//users are ready proceed
 		if (usersReady > 0) {
-			//printf("inside if\n");
 			pidHolder = goPids[readyOut];
 			temp = getIndex(pidHolder);
 			shmPtr->index = temp;
@@ -518,9 +535,16 @@ int main(int argc, char* argv[]) {
 			//more logging, depending on the status of the process
 			//terminated earlier than scheduled
 			if (shmPtr->pcb[temp].terminated) {
-				sprintf(addToLogBuffer, "OSS: PID %d has terminated. TimeSpent with the CPU %d ns \n", pidHolder, shmPtr->pcb[temp].lastExecTime);
+				sprintf(addToLogBuffer, "OSS: PID %d has terminated early. TimeSpent with the CPU %d ns \n", pidHolder, shmPtr->pcb[temp].lastExecTime);
 				logging(addToLogBuffer);
 				usedProcesses[temp] = 0;
+				allUsers++;
+				totalCpuTimeUsed += shmPtr->pcb[temp].cpuTimeMs;
+				totalSystemTime += shmPtr->pcb[temp].systemTimeMs;
+				reportUsers++;
+				cpuUtilization = shmPtr->pcb[temp].cpuTimeMs / 10;
+				cpuUtilAccumulator += cpuUtilization;
+
 			}
 			//process got blocked
 			else if (shmPtr->pcb[temp].blocked) {
@@ -530,12 +554,20 @@ int main(int argc, char* argv[]) {
 				logging(addToLogBuffer);
 				sprintf(addToLogBuffer, "OSS: Time slice was not used all the way because the process got blocked. \n");
 				logging(addToLogBuffer);
+				gotBlocked++;
+				totalCpuTimeUsed += shmPtr->pcb[temp].cpuTimeMs;
+				totalSystemTime += shmPtr->pcb[temp].systemTimeMs;
+				reportUsers++;
 			}
 			//finished all the way, no interrupt
 			else {
 				usedProcesses[temp] = 0;
 				sprintf(addToLogBuffer, "OSS: PID %d is finish and terminated. Time used in CPU: %.2fms Time in system: %.2fms Last exec time/burst: %dns\n", pidHolder, shmPtr->pcb[temp].cpuTimeMs, shmPtr->pcb[temp].systemTimeMs, shmPtr->pcb[temp].lastExecTime);
 				logging(addToLogBuffer);
+				allUsers++;
+				totalCpuTimeUsed += shmPtr->pcb[temp].cpuTimeMs;
+				totalSystemTime += shmPtr->pcb[temp].systemTimeMs;
+				reportUsers++;
 			}
 
 		}
