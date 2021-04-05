@@ -1,0 +1,534 @@
+OSS: PID is ready to go 
+OSS: PID: 4745 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID: 4746 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4745 is ready to go 
+OSS: PID 4745 is finish and terminated. Time used in CPU: 13.65ms Time in system: 26.65ms Last exec time/burst: 5649858ns
+OSS: PID: 4747 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4746 is ready to go 
+OSS: PID 4746 is finish and terminated. Time used in CPU: 9.01ms Time in system: 18.01ms Last exec time/burst: 5009819ns
+OSS: PID: 4748 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4747 is ready to go 
+OSS: PID 4747 has terminated early. TimeSpent with the CPU 9855722 ns 
+OSS: PID: 4749 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4748 is ready to go 
+OSS: PID 4748 has terminated early. TimeSpent with the CPU 5782093 ns 
+OSS: PID: 4750 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4749 is ready to go 
+OSS: PID 4749 has terminated early. TimeSpent with the CPU 9276153 ns 
+OSS: PID: 4751 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4750 is ready to go 
+OSS: PID 4750 has terminated early. TimeSpent with the CPU 2414117 ns 
+OSS: PID: 4752 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4751 is ready to go 
+OSS: PID 4751 is finish and terminated. Time used in CPU: 13.89ms Time in system: 26.89ms Last exec time/burst: 3891298ns
+OSS: PID: 4753 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4752 is ready to go 
+OSS: PID 4752 has terminated early. TimeSpent with the CPU 1137222 ns 
+OSS: PID: 4754 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4753 is ready to go 
+OSS: PID 4753 has terminated early. TimeSpent with the CPU 7707787 ns 
+OSS: PID: 4755 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4754 is ready to go 
+OSS: PID 4754 has terminated early. TimeSpent with the CPU 4359580 ns 
+OSS: PID: 4756 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4755 is ready to go 
+OSS: PID 4755 is finish and terminated. Time used in CPU: 11.57ms Time in system: 22.57ms Last exec time/burst: 3573655ns
+OSS: PID: 4757 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4756 is ready to go 
+OSS: PID 4756 has terminated early. TimeSpent with the CPU 3402011 ns 
+OSS: PID: 4758 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4757 is ready to go 
+OSS: PID 4757 has terminated early. TimeSpent with the CPU 6225273 ns 
+OSS: PID: 4759 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4758 is ready to go 
+OSS: PID 4758 has terminated early. TimeSpent with the CPU 8220941 ns 
+OSS: PID: 4760 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4759 is ready to go 
+OSS: PID 4759 has terminated early. TimeSpent with the CPU 6733968 ns 
+OSS: PID: 4761 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4760 is ready to go 
+OSS: PID 4760 has terminated early. TimeSpent with the CPU 9607928 ns 
+OSS: PID: 4762 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4761 is ready to go 
+OSS: PID 4761 is finish and terminated. Time used in CPU: 8.03ms Time in system: 16.03ms Last exec time/burst: 7028933ns
+OSS: PID: 4763 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4762 is ready to go 
+OSS: PID 4762 is finish and terminated. Time used in CPU: 9.08ms Time in system: 18.08ms Last exec time/burst: 7081246ns
+OSS: PID: 4764 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4763 is ready to go 
+OSS: PID 4763 has terminated early. TimeSpent with the CPU 6067473 ns 
+OSS: PID: 4765 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4764 is ready to go 
+OSS: PID 4764 has terminated early. TimeSpent with the CPU 5895190 ns 
+OSS: PID: 4766 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4765 is ready to go 
+OSS: PID 4765 has terminated early. TimeSpent with the CPU 5537412 ns 
+OSS: PID: 4767 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4766 is ready to go 
+OSS: PID 4766 is finish and terminated. Time used in CPU: 9.22ms Time in system: 18.22ms Last exec time/burst: 9224942ns
+OSS: PID: 4768 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4767 is ready to go 
+OSS: PID 4767 is finish and terminated. Time used in CPU: 8.00ms Time in system: 16.00ms Last exec time/burst: 4995159ns
+OSS: PID: 4769 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4768 is ready to go 
+OSS: PID 4768 has terminated early. TimeSpent with the CPU 1861546 ns 
+OSS: PID: 4770 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4769 is ready to go 
+OSS: PID 4769 has terminated early. TimeSpent with the CPU 4643339 ns 
+OSS: PID: 4771 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4770 is ready to go 
+OSS: PID 4770 has terminated early. TimeSpent with the CPU 8061072 ns 
+OSS: PID: 4772 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4771 is ready to go 
+OSS: PID 4771 is going to the blocked queue. Last Exec Time / Burst: 539811 ns
+OSS: Time slice was not used all the way because the process got blocked. 
+OSS: PID: 4773 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4772 is ready to go 
+OSS: PID 4772 has terminated early. TimeSpent with the CPU 7339248 ns 
+OSS: PID: 4774 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4773 is ready to go 
+OSS: PID 4773 is finish and terminated. Time used in CPU: 8.92ms Time in system: 17.92ms Last exec time/burst: 1922746ns
+OSS: PID: 4775 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4774 is ready to go 
+OSS: PID 4774 has terminated early. TimeSpent with the CPU 1955515 ns 
+OSS: PID: 4776 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4775 is ready to go 
+OSS: PID 4775 has terminated early. TimeSpent with the CPU 4466635 ns 
+OSS: PID: 4777 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4776 is ready to go 
+OSS: PID 4776 is finish and terminated. Time used in CPU: 7.14ms Time in system: 14.14ms Last exec time/burst: 5140694ns
+OSS: PID: 4778 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4777 is ready to go 
+OSS: PID 4777 has terminated early. TimeSpent with the CPU 9053560 ns 
+OSS: PID: 4779 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4771 is ready to go 
+OSS: PID 4771 is going to the blocked queue. Last Exec Time / Burst: 8899735 ns
+OSS: Time slice was not used all the way because the process got blocked. 
+OSS: PID is ready to go 
+OSS: PID: 4923 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID: 4924 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4923 is ready to go 
+OSS: PID 4923 is finish and terminated. Time used in CPU: 11.55ms Time in system: 22.55ms Last exec time/burst: 8549046ns
+OSS: PID: 4925 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4924 is ready to go 
+OSS: PID 4924 is going to the blocked queue. Last Exec Time / Burst: 5190737 ns
+OSS: Time slice was not used all the way because the process got blocked. 
+OSS: PID: 4926 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4925 is ready to go 
+OSS: PID 4925 is finish and terminated. Time used in CPU: 14.94ms Time in system: 28.94ms Last exec time/burst: 7936438ns
+OSS: PID: 4927 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4926 is ready to go 
+OSS: PID 4926 is finish and terminated. Time used in CPU: 3.72ms Time in system: 6.72ms Last exec time/burst: 2717869ns
+OSS: PID: 4928 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4927 is ready to go 
+OSS: PID 4927 is finish and terminated. Time used in CPU: 12.98ms Time in system: 25.98ms Last exec time/burst: 8983892ns
+OSS: PID: 4929 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4924 is ready to go 
+OSS: PID 4924 is finish and terminated. Time used in CPU: 16.67ms Time in system: 4027.67ms Last exec time/burst: 8482517ns
+OSS: PID: 4930 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4928 is ready to go 
+OSS: PID 4928 has terminated early. TimeSpent with the CPU 3531870 ns 
+OSS: PID: 4931 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4929 is ready to go 
+OSS: PID 4929 is finish and terminated. Time used in CPU: 14.04ms Time in system: 28.04ms Last exec time/burst: 5040206ns
+OSS: PID: 4932 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4930 is ready to go 
+OSS: PID 4930 is finish and terminated. Time used in CPU: 9.75ms Time in system: 18.75ms Last exec time/burst: 4753630ns
+OSS: PID: 4933 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4931 is ready to go 
+OSS: PID 4931 has terminated early. TimeSpent with the CPU 3594936 ns 
+OSS: PID: 4934 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4932 is ready to go 
+OSS: PID 4932 has terminated early. TimeSpent with the CPU 4102443 ns 
+OSS: PID: 4935 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4933 is ready to go 
+OSS: PID 4933 has terminated early. TimeSpent with the CPU 9930540 ns 
+OSS: PID: 4936 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4934 is ready to go 
+OSS: PID 4934 has terminated early. TimeSpent with the CPU 1082752 ns 
+OSS: PID: 4937 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4935 is ready to go 
+OSS: PID 4935 has terminated early. TimeSpent with the CPU 4198382 ns 
+OSS: PID: 4938 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4936 is ready to go 
+OSS: PID 4936 has terminated early. TimeSpent with the CPU 2925377 ns 
+OSS: PID: 4939 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4937 is ready to go 
+OSS: PID 4937 has terminated early. TimeSpent with the CPU 5334473 ns 
+OSS: PID: 4940 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4938 is ready to go 
+OSS: PID 4938 has terminated early. TimeSpent with the CPU 6663219 ns 
+OSS: PID: 4941 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4939 is ready to go 
+OSS: PID 4939 is finish and terminated. Time used in CPU: 4.58ms Time in system: 8.58ms Last exec time/burst: 2582474ns
+OSS: PID: 4942 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4940 is ready to go 
+OSS: PID 4940 is finish and terminated. Time used in CPU: 3.09ms Time in system: 6.09ms Last exec time/burst: 3087225ns
+OSS: PID: 4943 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4941 is ready to go 
+OSS: PID 4941 has terminated early. TimeSpent with the CPU 1043135 ns 
+OSS: PID: 4944 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4942 is ready to go 
+OSS: PID 4942 has terminated early. TimeSpent with the CPU 6500398 ns 
+OSS: PID: 4945 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4943 is ready to go 
+OSS: PID 4943 has terminated early. TimeSpent with the CPU 4504410 ns 
+OSS: PID: 4946 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4944 is ready to go 
+OSS: PID 4944 is going to the blocked queue. Last Exec Time / Burst: 4186683 ns
+OSS: Time slice was not used all the way because the process got blocked. 
+OSS: PID: 4947 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4945 is ready to go 
+OSS: PID 4945 is finish and terminated. Time used in CPU: 4.59ms Time in system: 8.59ms Last exec time/burst: 587751ns
+OSS: PID: 4948 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4946 is ready to go 
+OSS: PID 4946 is finish and terminated. Time used in CPU: 16.36ms Time in system: 32.36ms Last exec time/burst: 9363851ns
+OSS: PID: 4949 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4947 is ready to go 
+OSS: PID 4947 has terminated early. TimeSpent with the CPU 3908304 ns 
+OSS: PID: 4950 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4948 is ready to go 
+OSS: PID 4948 has terminated early. TimeSpent with the CPU 4524581 ns 
+OSS: PID: 4951 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4949 is ready to go 
+OSS: PID 4949 has terminated early. TimeSpent with the CPU 7750340 ns 
+OSS: PID: 4952 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4944 is ready to go 
+OSS: PID 4944 is finish and terminated. Time used in CPU: 13.85ms Time in system: 6022.85ms Last exec time/burst: 4664600ns
+OSS: PID: 4953 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4950 is ready to go 
+OSS: PID 4950 has terminated early. TimeSpent with the CPU 2069234 ns 
+OSS: PID: 4954 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4951 is ready to go 
+OSS: PID 4951 has terminated early. TimeSpent with the CPU 2131513 ns 
+OSS: PID: 4955 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4952 is ready to go 
+OSS: PID 4952 is finish and terminated. Time used in CPU: 13.94ms Time in system: 27.94ms Last exec time/burst: 3943456ns
+OSS: PID: 4956 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4953 is ready to go 
+OSS: PID 4953 is finish and terminated. Time used in CPU: 12.58ms Time in system: 24.58ms Last exec time/burst: 8582751ns
+OSS: PID: 4957 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4954 is ready to go 
+OSS: PID 4954 has terminated early. TimeSpent with the CPU 2049889 ns 
+OSS: PID: 4958 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4955 is ready to go 
+OSS: PID 4955 is finish and terminated. Time used in CPU: 17.30ms Time in system: 34.30ms Last exec time/burst: 8295575ns
+OSS: PID: 4959 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4956 is ready to go 
+OSS: PID 4956 is finish and terminated. Time used in CPU: 15.55ms Time in system: 30.55ms Last exec time/burst: 9545118ns
+OSS: PID: 4960 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4957 is ready to go 
+OSS: PID 4957 has terminated early. TimeSpent with the CPU 711403 ns 
+OSS: PID: 4961 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4958 is ready to go 
+OSS: PID 4958 has terminated early. TimeSpent with the CPU 856751 ns 
+OSS: PID: 4962 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4959 is ready to go 
+OSS: PID 4959 is finish and terminated. Time used in CPU: 1.67ms Time in system: 3.67ms Last exec time/burst: 672003ns
+OSS: PID: 4963 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4960 is ready to go 
+OSS: PID 4960 is finish and terminated. Time used in CPU: 11.92ms Time in system: 23.92ms Last exec time/burst: 4919542ns
+OSS: PID: 4964 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4961 is ready to go 
+OSS: PID 4961 has terminated early. TimeSpent with the CPU 1712414 ns 
+OSS: PID: 4965 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4962 is ready to go 
+OSS: PID 4962 is finish and terminated. Time used in CPU: 4.14ms Time in system: 8.14ms Last exec time/burst: 2136401ns
+OSS: PID: 4966 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4963 is ready to go 
+OSS: PID 4963 has terminated early. TimeSpent with the CPU 4543412 ns 
+OSS: PID: 4967 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4964 is ready to go 
+OSS: PID 4964 has terminated early. TimeSpent with the CPU 670957 ns 
+OSS: PID: 4968 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4965 is ready to go 
+OSS: PID 4965 is finish and terminated. Time used in CPU: 2.35ms Time in system: 4.35ms Last exec time/burst: 2351234ns
+OSS: PID: 4969 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4966 is ready to go 
+OSS: PID 4966 has terminated early. TimeSpent with the CPU 3782283 ns 
+OSS: PID: 4970 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4967 is ready to go 
+OSS: PID 4967 is finish and terminated. Time used in CPU: 9.20ms Time in system: 18.20ms Last exec time/burst: 2204031ns
+OSS: PID: 4971 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4968 is ready to go 
+OSS: PID 4968 is finish and terminated. Time used in CPU: 12.99ms Time in system: 25.99ms Last exec time/burst: 3990524ns
+OSS: PID: 4972 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4969 is ready to go 
+OSS: PID 4969 has terminated early. TimeSpent with the CPU 8179390 ns 
+OSS: PID: 4973 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4970 is ready to go 
+OSS: PID 4970 has terminated early. TimeSpent with the CPU 6598681 ns 
+OSS: PID: 4974 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4971 is ready to go 
+OSS: PID 4971 is finish and terminated. Time used in CPU: 5.29ms Time in system: 10.29ms Last exec time/burst: 4290678ns
+OSS: PID: 4975 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4972 is ready to go 
+OSS: PID 4972 has terminated early. TimeSpent with the CPU 8317888 ns 
+OSS: PID: 4976 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4973 is ready to go 
+OSS: PID 4973 is finish and terminated. Time used in CPU: 9.43ms Time in system: 19.43ms Last exec time/burst: 2432087ns
+OSS: PID: 4977 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4974 is ready to go 
+OSS: PID 4974 is finish and terminated. Time used in CPU: 4.60ms Time in system: 9.60ms Last exec time/burst: 4596600ns
+OSS: PID: 4978 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4975 is ready to go 
+OSS: PID 4975 has terminated early. TimeSpent with the CPU 6408136 ns 
+OSS: PID: 4979 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4976 is ready to go 
+OSS: PID 4976 is finish and terminated. Time used in CPU: 4.49ms Time in system: 9.49ms Last exec time/burst: 3487520ns
+OSS: PID: 4980 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4977 is ready to go 
+OSS: PID 4977 is finish and terminated. Time used in CPU: 12.22ms Time in system: 24.22ms Last exec time/burst: 3220275ns
+OSS: PID: 4981 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4978 is ready to go 
+OSS: PID 4978 is finish and terminated. Time used in CPU: 8.60ms Time in system: 17.60ms Last exec time/burst: 596379ns
+OSS: PID: 4982 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4979 is ready to go 
+OSS: PID 4979 has terminated early. TimeSpent with the CPU 7496544 ns 
+OSS: PID: 4983 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4980 is ready to go 
+OSS: PID 4980 is finish and terminated. Time used in CPU: 15.75ms Time in system: 31.75ms Last exec time/burst: 9748403ns
+OSS: PID: 4984 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4981 is ready to go 
+OSS: PID 4981 is finish and terminated. Time used in CPU: 2.64ms Time in system: 5.64ms Last exec time/burst: 640678ns
+OSS: PID: 4985 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4982 is ready to go 
+OSS: PID 4982 has terminated early. TimeSpent with the CPU 6650242 ns 
+OSS: PID: 4986 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4983 is ready to go 
+OSS: PID 4983 is finish and terminated. Time used in CPU: 9.62ms Time in system: 19.62ms Last exec time/burst: 7619513ns
+OSS: PID: 4987 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4984 is ready to go 
+OSS: PID 4984 is finish and terminated. Time used in CPU: 10.11ms Time in system: 20.11ms Last exec time/burst: 113459ns
+OSS: PID: 4988 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4985 is ready to go 
+OSS: PID 4985 has terminated early. TimeSpent with the CPU 7195160 ns 
+OSS: PID: 4989 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4986 is ready to go 
+OSS: PID 4986 is finish and terminated. Time used in CPU: 11.90ms Time in system: 23.90ms Last exec time/burst: 1904698ns
+OSS: PID: 4990 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4987 is ready to go 
+OSS: PID 4987 is finish and terminated. Time used in CPU: 17.94ms Time in system: 35.94ms Last exec time/burst: 9935305ns
+OSS: PID: 4991 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4988 is ready to go 
+OSS: PID 4988 is going to the blocked queue. Last Exec Time / Burst: 1088397 ns
+OSS: Time slice was not used all the way because the process got blocked. 
+OSS: PID: 4992 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4989 is ready to go 
+OSS: PID 4989 is finish and terminated. Time used in CPU: 15.00ms Time in system: 30.00ms Last exec time/burst: 5996193ns
+OSS: PID: 4993 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4990 is ready to go 
+OSS: PID 4990 has terminated early. TimeSpent with the CPU 9192864 ns 
+OSS: PID: 4994 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4991 is ready to go 
+OSS: PID 4991 is finish and terminated. Time used in CPU: 17.09ms Time in system: 34.09ms Last exec time/burst: 8088517ns
+OSS: PID: 4995 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4992 is ready to go 
+OSS: PID 4992 has terminated early. TimeSpent with the CPU 7158882 ns 
+OSS: PID: 4996 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4993 is ready to go 
+OSS: PID 4993 is finish and terminated. Time used in CPU: 8.96ms Time in system: 17.96ms Last exec time/burst: 3958874ns
+OSS: PID: 4997 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4994 is ready to go 
+OSS: PID 4994 has terminated early. TimeSpent with the CPU 4675790 ns 
+OSS: PID: 4998 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4995 is ready to go 
+OSS: PID 4995 is finish and terminated. Time used in CPU: 8.40ms Time in system: 17.40ms Last exec time/burst: 8398343ns
+OSS: PID: 4999 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4996 is ready to go 
+OSS: PID 4996 is finish and terminated. Time used in CPU: 14.90ms Time in system: 29.90ms Last exec time/burst: 7901664ns
+OSS: PID: 5000 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4997 is ready to go 
+OSS: PID 4997 has terminated early. TimeSpent with the CPU 974681 ns 
+OSS: PID: 5001 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4998 is ready to go 
+OSS: PID 4998 is finish and terminated. Time used in CPU: 15.22ms Time in system: 31.22ms Last exec time/burst: 5224779ns
+OSS: PID: 5002 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 4999 is ready to go 
+OSS: PID 4999 has terminated early. TimeSpent with the CPU 7112466 ns 
+OSS: PID: 5003 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5000 is ready to go 
+OSS: PID 5000 is finish and terminated. Time used in CPU: 9.83ms Time in system: 19.83ms Last exec time/burst: 5831670ns
+OSS: PID: 5004 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5001 is ready to go 
+OSS: PID 5001 has terminated early. TimeSpent with the CPU 4875652 ns 
+OSS: PID: 5005 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5002 is ready to go 
+OSS: PID 5002 has terminated early. TimeSpent with the CPU 6950479 ns 
+OSS: PID: 5006 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5003 is ready to go 
+OSS: PID 5003 has terminated early. TimeSpent with the CPU 4209800 ns 
+OSS: PID: 5007 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5004 is ready to go 
+OSS: PID 5004 has terminated early. TimeSpent with the CPU 3968061 ns 
+OSS: PID: 5008 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5005 is ready to go 
+OSS: PID 5005 is finish and terminated. Time used in CPU: 2.91ms Time in system: 5.91ms Last exec time/burst: 1907692ns
+OSS: PID: 5009 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5006 is ready to go 
+OSS: PID 5006 has terminated early. TimeSpent with the CPU 613882 ns 
+OSS: PID: 5010 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5007 is ready to go 
+OSS: PID 5007 is finish and terminated. Time used in CPU: 6.03ms Time in system: 12.03ms Last exec time/burst: 5028753ns
+OSS: PID: 5011 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5008 is ready to go 
+OSS: PID 5008 is going to the blocked queue. Last Exec Time / Burst: 6093858 ns
+OSS: Time slice was not used all the way because the process got blocked. 
+OSS: PID is ready to go 
+OSS: PID is ready to go 
+OSS: PID: 5015 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID is ready to go 
+OSS: PID 5015 is ready to go 
+OSS: PID 5015 has terminated early. TimeSpent with the CPU 3576276 ns 
+OSS: PID: 5016 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID: 5017 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5016 is ready to go 
+OSS: PID 5016 is finish and terminated. Time used in CPU: 17.23ms Time in system: 34.23ms Last exec time/burst: 7233694ns
+OSS: PID: 5018 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5017 is ready to go 
+OSS: PID 5017 is finish and terminated. Time used in CPU: 11.03ms Time in system: 22.03ms Last exec time/burst: 5027250ns
+OSS: PID: 5019 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5018 is ready to go 
+OSS: PID 5018 is finish and terminated. Time used in CPU: 11.76ms Time in system: 22.76ms Last exec time/burst: 2762530ns
+OSS: PID: 5020 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5019 is ready to go 
+OSS: PID 5019 is finish and terminated. Time used in CPU: 4.74ms Time in system: 8.74ms Last exec time/burst: 743136ns
+OSS: PID: 5021 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5020 is ready to go 
+OSS: PID 5020 has terminated early. TimeSpent with the CPU 2507562 ns 
+OSS: PID: 5022 is in the ready queue
+OSS: PID is ready to go 
+OSS: PID 5021 is ready to go 
+OSS: PID 5021 is going to the blocked queue. Last Exec Time / Burst: 9859435 ns
+OSS: Time slice was not used all the way because the process got blocked. 

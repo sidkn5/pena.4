@@ -44,6 +44,7 @@ int lineLimit;					//line limit of log file
 float allUsers = 0;
 float blockedStatistic;
 float gotBlocked = 0;
+int times;
 double averageWaitTime = 0;
 unsigned int totalCpuTimeUsed = 0;
 unsigned int totalSystemTime = 0;
@@ -161,6 +162,7 @@ void resetPid(pid_t p) {
 
 //referred to stackoverflow
 //takes care of children who dies
+//fix this
 void mySigchldHandler(int sig) {
 	pid_t pid;
 	while ((pid = waitpid((pid_t)(-1), 0, WNOHANG)) > 0) {
@@ -293,6 +295,13 @@ int getIndex(int pid) {
 	return -1;
 }
 
+void getTimes(int userInd) {
+	times = rand() % 11;
+	shmPtr->pcb[userInd].cpuTimeMs += times;
+	shmPtr->pcb[userInd].systemTimeMs += shmPtr->pcb[userInd].cpuTimeMs + times;
+
+}
+
 //checks the blocked processes and see if they can be moved to the ready queue
 void checkBlockedProcesses() {
 	int pid = blockedQ[blockedOut];
@@ -339,6 +348,7 @@ void clockCheck() {
 		shmPtr->nanoseconds -= 1000000000;
 	}
 }
+
 
 
 //MAIN driver
@@ -391,12 +401,12 @@ int main(int argc, char* argv[]) {
 				
 				strcpy(logfile, optarg);
 				printf("logfile name: %s\n", logfile);
-
+				newLogfile = 1;
 			}
 			else {
 				strcpy(logfile, "logfile.txt");
 				printf("logfile name: %s\n", logfile);
-				newLogfile = 1;
+				newLogfile = 0;
 			}
 			break;
 
@@ -410,7 +420,7 @@ int main(int argc, char* argv[]) {
 	//printf("HelloWorldNew \n");
 
 	//defaults to logfile.txt
-	if (newLogfile == 1) {
+	if (newLogfile == 0) {
 		strcpy(logfile, "logfile.txt");
 	}
 
@@ -538,6 +548,8 @@ int main(int argc, char* argv[]) {
 				sprintf(addToLogBuffer, "OSS: PID %d has terminated early. TimeSpent with the CPU %d ns \n", pidHolder, shmPtr->pcb[temp].lastExecTime);
 				logging(addToLogBuffer);
 				usedProcesses[temp] = 0;
+
+
 				allUsers++;
 				totalCpuTimeUsed += shmPtr->pcb[temp].cpuTimeMs;
 				totalSystemTime += shmPtr->pcb[temp].systemTimeMs;
@@ -554,6 +566,8 @@ int main(int argc, char* argv[]) {
 				logging(addToLogBuffer);
 				sprintf(addToLogBuffer, "OSS: Time slice was not used all the way because the process got blocked. \n");
 				logging(addToLogBuffer);
+
+				
 				gotBlocked++;
 				totalCpuTimeUsed += shmPtr->pcb[temp].cpuTimeMs;
 				totalSystemTime += shmPtr->pcb[temp].systemTimeMs;
@@ -562,12 +576,18 @@ int main(int argc, char* argv[]) {
 			//finished all the way, no interrupt
 			else {
 				usedProcesses[temp] = 0;
+				getTimes(temp);
 				sprintf(addToLogBuffer, "OSS: PID %d is finish and terminated. Time used in CPU: %.2fms Time in system: %.2fms Last exec time/burst: %dns\n", pidHolder, shmPtr->pcb[temp].cpuTimeMs, shmPtr->pcb[temp].systemTimeMs, shmPtr->pcb[temp].lastExecTime);
 				logging(addToLogBuffer);
+
+				
 				allUsers++;
 				totalCpuTimeUsed += shmPtr->pcb[temp].cpuTimeMs;
 				totalSystemTime += shmPtr->pcb[temp].systemTimeMs;
 				reportUsers++;
+				cpuUtilization = shmPtr->pcb[temp].cpuTimeMs / 10;
+				cpuUtilAccumulator += cpuUtilization;
+				
 			}
 
 		}
